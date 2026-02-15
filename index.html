@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR CLAN - الأعمال</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --main-blue: #007bff;
+            --bg-white: #f8f9fa;
+            --text-dark: #222;
+            --text-gray: #666;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-white);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* القسم الرئيسي */
+        .hero {
+            text-align: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--main-blue);
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-top: 10px;
+            font-weight: 500;
+        }
+
+        /* حاوية الأعمال */
+        .works-container {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 900px;
+        }
+
+        /* تصميم الكارد */
+        .card {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 180px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--main-blue);
+            box-shadow: 0 10px 20px rgba(0,123,255,0.1);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--main-blue);
+        }
+
+        .card .status {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .card.coming-soon {
+            background-color: #fafafa;
+            border-style: dashed;
+        }
+
+        .card.coming-soon h2 {
+            color: #aaa;
+        }
+
+        /* زر بسيط للمعاينة */
+        .btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: var(--main-blue);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* الجوال */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.5rem; }
+            .card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>MR CLAN</h1>
+        <p>الاعمال</p>
+    </div>
+
+    <div class="works-container">
+        <div class="card">
+            <h2>MR NETWORK</h2>
+            <p class="status">مشروع قائم - سيرفر ألعاب</p>
+            <a href="#" class="btn">زيارة الموقع</a>
+        </div>
+
+        <div class="card coming-soon">
+            <h2>قريباً...</h2>
+            <p class="status">مشروع جديد تحت الإنشاء</p>
+        </div>
+    </div>
+
+</body>
+</html>
