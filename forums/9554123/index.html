@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR NETWORK - Survival Updates v2.1</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <meta name="theme-color" content="#007bff">
+    <meta property="og:title" content="MR NETWORK - Survival Updates v2.1" />
+    <meta property="og:description" content="تحديثات جديدة للسيرفر بواسطة Admin Lightning Killer" />
+    <meta property="og:image" content="https://cdn.discordapp.com/icons/1072177528497774592/20334f3081bfc65fe161c3d3e9798f54.png?size=1024" />
+
+    <style>
+        :root {
+            --main-blue: #007bff;
+            --light-blue: #e7f3ff;
+            --bg-white: #f8f9fa;
+            --text-dark: #333;
+            --border-color: #dee2e6;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-white);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* الهيدر */
+        header {
+            background-color: #fff;
+            padding: 15px 10%;
+            border-bottom: 2px solid var(--main-blue);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--main-blue);
+        }
+
+        /* الحاوية */
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .breadcrumb {
+            font-size: 0.85em;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb a {
+            color: var(--main-blue);
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #222;
+            margin-bottom: 25px;
+        }
+
+        /* البوست (Thread) */
+        .post-container {
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            display: flex;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        /* معلومات العضو */
+        .user-sidebar {
+            width: 160px;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-left: 1px solid var(--border-color);
+        }
+
+        .avatar-box img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid var(--light-blue);
+            object-fit: cover;
+        }
+
+        .username {
+            display: block;
+            font-weight: 700;
+            margin: 10px 0 5px;
+            color: var(--main-blue);
+        }
+
+        .rank-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            background-color: var(--main-blue);
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        /* محتوى الرسالة */
+        .post-main {
+            flex: 1;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-header {
+            font-size: 0.8em;
+            color: #999;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f1f1f1;
+            padding-bottom: 10px;
+        }
+
+        .post-text {
+            flex: 1;
+            font-size: 1.05em;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .post-footer {
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+
+        .like-btn {
+            background: var(--light-blue);
+            color: var(--main-blue);
+            padding: 6px 15px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            cursor: pointer;
+            border: none;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .like-btn:hover {
+            background: var(--main-blue);
+            color: #fff;
+        }
+
+        /* الديسكورد ستايل */
+        .discord-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        /* الجوال */
+        @media (max-width: 768px) {
+            .post-container { flex-direction: column; }
+            .user-sidebar { width: 100%; border-left: none; border-bottom: 1px solid var(--border-color); }
+            .container { width: 95%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">MR NETWORK</div>
+    <nav style="color: #666; font-size: 0.9em;">المنتديات</nav>
+</header>
+
+<div class="container">
+    <div class="breadcrumb">
+        <a href="#">الرئيسية</a> » <a href="#">المنتديات</a> » <a href="#">قسم الأخبار</a>
+    </div>
+
+    <h1>تحديثات سيرفر السرفايفل v2.1</h1>
+
+    <div class="post-container">
+        <div class="user-sidebar">
+            <div class="avatar-box">
+                <img src="https://cdn.discordapp.com/avatars/691044838459834430/7e4996804ec38d84c3ab22f349626084.png?size=1024" alt="avatar">
+            </div>
+            <span class="username" style="color: Red;">Lightning_Killer</span>
+            <span class="rank-badge" style="background-color: Red;">ADMIN</span>
+        </div>
+        <div class="post-main">
+            <div class="post-header">نُشر في: 15 فبراير 2026</div>
+            <div class="post-text">
+                أهلاً بكم في <b>MR NETWORK</b>! <br><br>
+                تم والحمدلله اطلاق التحديث الجديد رقم 2.1 إلى لعبة السيرفايفل حيث ركزنا على
+                <ul style="margin-right: 20px; color: #555;">
+                    <li>نظام البلاك ماركيت لشراء الاشياء الغريبة</li>
+                    <li>نظام صرف العملات لعملات نقدية باليد</li>
+                    <li>تم اضافة ميزة الصهر التلقائي لرتبة الفي أي بي</li>
+                    <li>تم اضافة ميزة جمع الاغراض التلقائي لرتبة الفي أي بي</li>
+                    <li>تم اضافة ميزة فتح/اغلاق القتال مع الأخرين</li>
+                    <li>تم اضافة سلة مهملات في قائمة السيرفايفل</li>
+                    <li>تم اضافة كرافتينغ تيبل سريعة الاستخدام ضمن قائمة السيرفايفل</li>
+                    <li>تم اضافة مهام جديدة إلى اللعبة ومكافاة بعد تنفيذها</li>
+                    <li>تم تحديث عمل نظام الأعمال والأرباح منها</li>
+                    <li>نظام اللوكيشن والسيت لوكيشن لحفظ مواقع اللاعبين والانتقال إليها</li>
+                </ul>
+                نتمنى لكم تجربة ممتعة والسلام عليكم ورحمة الله وبركاته
+            </div>
+            <div class="post-footer">
+                <button class="like-btn" onclick="this.innerHTML='❤️'">👍</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-container">
+        <div class="user-sidebar">
+            <div class="avatar-box">
+                <img src="https://ui-avatars.com/api/?name=Player&background=007bff&color=fff" alt="avatar">
+            </div>
+            <span class="username">Palfode0</span>
+            <span class="rank-badge" style="background-color: #6c757d;">MEMBER</span>
+        </div>
+        <div class="post-main">
+            <div class="post-header">منذ خمسة دقائق</div>
+            <div class="post-text">
+                كفو يسطا
+            </div>
+            <div class="post-footer">
+                <button class="like-btn" onclick="this.innerHTML='❤️'">👍</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="discord-section">
+        <h3 style="margin-bottom: 15px; color: #444;">انضم إلى الديسكورد</h3>
+        <iframe src="https://discord.com/widget?id=1072177528497774592&theme=light" width="100%" height="400" allowtransparency="true" frameborder="0" style="max-width: 500px; border-radius: 8px; border: 1px solid #ddd;"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
